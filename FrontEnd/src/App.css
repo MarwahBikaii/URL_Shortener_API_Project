@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Modern and clean font */
+  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* Warm pastel gradient */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width:800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Slightly bolder shadow for depth */
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ff6f61; /* Vibrant coral tone */
+  letter-spacing: 1.2px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Larger gap for spacing */
+}
+
+/* Input */
+input[type="url"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e4e4e4;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fffafa; /* Subtle off-white for contrast */
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="url"]:focus {
+  outline: none;
+  border-color: #ff6f61;
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.4);
+}
+
+/* Button */
+button {
+  padding: 14px 22px;
+  width: 100%;
+  background: linear-gradient(135deg, #ff6f61, #ff3e4d); /* Coral gradient */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 111, 97, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff3e4d, #d72b3b); /* Richer red tones */
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(255, 111, 97, 0.3);
+}
+
+/* Short URL Section */
+.short-url {
+  margin-top: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.short-url h2 {
+  font-size: 1.6rem;
+  color: #6b38fb; /* Bright indigo for contrast */
+}
+
+.short-url a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #6b38fb, #4a20d1); /* Purple gradient */
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(107, 56, 251, 0.2);
+}
+
+.short-url a:hover {
+  background: linear-gradient(135deg, #4a20d1, #36129c); /* Darker purple tones */
+  transform: scale(1.06);
+  box-shadow: 0 8px 20px rgba(107, 56, 251, 0.3);
+}
+
+/* Error Message */
+.error {
+  margin-top: 10px;
+  color: #e63946; /* Vibrant red */
+  font-size: 0.95rem;
+  animation: shake 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
